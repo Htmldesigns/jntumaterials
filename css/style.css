@@ -17,18 +17,18 @@ ul.tab {
 }
 
 /* Float the list items side by side */
-ul.tab li {float: left;width: 120px;}
+ul.tab li {float: left;width: 150px;}
 
 /* Style the links inside the list items */
 ul.tab li a {
     display: inline-block;
     color: black;
-    padding: 1px 7px;
+    padding: 15px 7px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
     color: #FFF;
-    width: 118px;
+    width: 136px;
 }
 
 /* Change background color of links on hover */
@@ -73,7 +73,7 @@ ul.tab li a:focus, .active {
 
 /* #################Body styels ################*/
 .content{height: 515px;padding: 15px;}
-#vertical-left{float: left;width: 150px;border: 1px solid #b3acac;height: 500px;-webkit-box-shadow: 0 0 3px #CACACA;box-shadow: 0 0 3px #CACACA; }
+#vertical-left{float: left;width: 150px;height: 500px; }
 #text{float: left;width: 865px;height: 500px}
 #vertical-right{float: left;width: 150px;border: 1px solid #b3acac;height: 500px;-webkit-box-shadow: 0 0 3px #CACACA;box-shadow: 0 0 3px #CACACA; }
 .notifications{padding-left: 55px;}
