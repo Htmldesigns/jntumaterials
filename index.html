@@ -2,288 +2,258 @@
 <html>
 <head>
 	<title>JNTU Notifications</title>
+	<!--Google -Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Sintony:400,700&subset=latin-ext' rel='stylesheet' type='text/css'>
+		
+<!--Font-awsome-->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-	<script type="text/javascript">
-	  
-		$(document).ready(function(){
-			$('#mainmenu').hover(function() {
-				//alert("hello");
-				$('#submenu').css({'display':'block', 'height':'auto', 'width':'9em','margin-top':'18px','background':'#494949'});
-				$('#submenu1').css({'display':'none'});
-				$('#submenu2').css({'display':'none'});
-			});
-			$('#mainmenu1').hover(function() {
-				//alert("hello");
-				$('#submenu').css({'display':'none'});
-				$('#submenu2').css({'display':'none'});
-				$('#submenu1').css({'display':'block', 'height':'auto', 'width':'9em','margin-top':'18px','background':'#494949'});
-			});
-			$('#mainmenu2').hover(function() {
-				//alert("hello");
-				$('#submenu1').css({'display':'none'});
-				$('#submenu2').css({'display':'block', 'height':'auto', 'width':'9em','margin-top':'18px','background':'#494949'});
-			});
-			$('#aboutus').hover(function(){
-				$('#submenu1').css({'display':'none'});
-				$('#submenu2').css({'display':'none'});
-				$('#submenu').css({'display':'none'});
-			});
-			$('#home').hover(function(){
-				$('#submenu1').css({'display':'none'});
-				$('#submenu2').css({'display':'none'});
-				$('#submenu').css({'display':'none'});
-			});
-			$('.content').hover(function() {
-				$('#submenu').css({'display':'none'});
-				$('#submenu1').css({'display':'none'});
-				$('#submenu2').css({'display':'none'});
-			});
-			
-			$('.results').hover(function() {
-				$('#submenu').css({'display':'none'});
-				$('#submenu1').css({'display':'none'});
-				$('#submenu2').css({'display':'none'});
-			});
-		})
-	</script>
-
-	<script type="text/javascript">
-			function openCity(evt, cityName) {
-		    var i, tabcontent, tablinks;
-		    tabcontent = document.getElementsByClassName("tabcontent");
-		    for (i = 0; i < tabcontent.length; i++) {
-		        tabcontent[i].style.display = "none";
-		    }
-		    tablinks = document.getElementsByClassName("tablinks");
-		    for (i = 0; i < tablinks.length; i++) {
-		        tablinks[i].className = tablinks[i].className.replace(" active", "");
-		    }
-		    document.getElementById(cityName).style.display = "block";
-		    evt.currentTarget.className += " active";
-		}
-    </script>
-
-	
 </head>
 <body>
-  <div class="outer-wraper">
-     
-     <div class="header">
-     	<div class="logo">
-     		<img src="images/logo.png">
-     	</div>
-     	<div class="add">
-     		<img src="images/offersmelaadd.png">
-     	</div>
-     </div>
-     <div class="nav">
-     	<ul>
-     		<li id="home"><a href="index.html">HOME</a></li>
-     		<li id="mainmenu">
-     		  <a href="javascript:void(0)">JNTUK</a>
-     		  <ul id="submenu">
-     		  	<li><a href="jntuk_notifications.html">Notifications</a></li>
-     		  	<li><a href="jntuk_timetables.html">Time Table</a></li>
-     		  </ul>
-     		</li>
-     		<li id="mainmenu1">
-     		  <a href="javascript:void(0)">JNTUH</a>
-     		   <ul id="submenu1">
-     		  	<li><a href="jntuh_notifications.html">Notifications</a></li>
-     		  	<li><a href="jntuh_timetables.html">Time Table</a></li>
-     		  </ul>
-     		</li>
-     		<li id="mainmenu2">
-     		  <a href="javascript:void(0)">JNTUA</a>
-     		  <ul id="submenu2">
-     		  	<li><a href="jntua_notifications.html">Notifications</a></li>
-     		  	<li><a href="jntua_timetables.html">Time Table</a></li>
-     		  </ul>
-     		</li>
-     		<li id="aboutus"><a href="">MATERIALS</a></li>
-     		<li id="results"><a href="">RESULTS</a></li>
-     	</ul>
-     </div>
-     <div class="content">
-       <div id="vertical-left"> 
-       	  <ul class="tab">
-			  <li style="background-color: #ff6c00;"><a href="javascript:void(0)" class="tablinks active" onclick="openCity(event, 'London')">JNTU-Kakinada</a></li>
-			  <li style="background-color: #050007;"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">JNTU-Hyderabad</a></li>
-			  <li style="background-color: #5b0085;"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Tokyo')">JNTU-Anantapur</a></li>
-			  <li style="background-color: #00c0ff;"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'metrial4')">JNTU-Anantapur</a></li>
-			  <li style="background-color: #ff6c00;"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'metrial5')">JNTU-Anantapur</a></li>
-			  <li style="background-color: #5b0085;"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'metrial6')">JNTU-Anantapur</a></li>
-			  <li style="background-color: #050007;"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'metrial7')">JNTU-Anantapur</a></li>
-			</ul>
-
-       </div>
-       <div id="text">
-        	<div class="results-tab">
-	        <!-- <ul class="tab">
-			  <li style="background-color: #ff6c00;"><a href="javascript:void(0)" class="tablinks active" onclick="openCity(event, 'London')">JNTU-Kakinada</a></li>
-			  <li style="background-color: #050007;"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">JNTU-Hyderabad</a></li>
-			  <li style="background-color: #5b0085;"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Tokyo')">JNTU-Anantapur</a></li>
-			  <li style="background-color: #00c0ff;"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'metrial4')">JNTU-Anantapur</a></li>
-			  <li style="background-color: #ff6c00;"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'metrial5')">JNTU-Anantapur</a></li>
-			  <li style="background-color: #5b0085;"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'metrial6')">JNTU-Anantapur</a></li>
-			  <li style="background-color: #050007;"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'metrial7')">JNTU-Anantapur</a></li>
-			</ul> -->
-
-			<div id="London" class="tabcontent" style="display: block;">
-			   <ul class="tabresult">
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color1"><strong>JNTUA MBA/MCA I, II &amp; V Semesters Regular/Supply Exam Results May 2016<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color2"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch</strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color"><strong>JNTUK B.Tech/B.Pharmacy 4-2 Sem Adv Supply Exam Jumbling centers list July 2016<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	  <li>
-			   	 	 <h4><a href="" class="resultk-color1"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	  <li>
-			   	 	 <h4><a href="" class="resultk-color2"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch</strong></a></h4>
-			   	 </li>
-			   </ul>
+ 	
+<div class="container">
+			<header>
+				<span class="logo"><img src="images/logo2.png" width="300"></span>
+				<span class="banner"><img src="images/offersmelaadd.png"></span>
+				
+			</header>
 			
+			<div class="xs-menu-cont">
+			<a id="menutoggle"><i class="fa fa-align-justify"></i> </a>
+				<nav class="xs-menu displaynone">
+					<ul>
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Services</a>
+						</li>
+						<li>
+							<a href="#">Team</a>
+						</li>
+						<li>
+							<a href="#">Portfolio</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+
+					</ul>
+				</nav>
 			</div>
+			<nav class="menu">
+				<ul>
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li class="drop-down">
+						<a href="#">Engineering </a>
+					 
+						<div class="mega-menu fadeIn animated">
+						<div class="mm-3column">
+								
+								<span class="categories-list">
+								<ul>
+								<span>Computer Science</span>
+									<li>lst Semester</li>
+									<li>2nd Semester </li>
+									<li>3rd Semester</li>
+									<li>4th Semester</li>
+									<li>5th Semester</li>
+									<li>6th Semester</li>
+									
+								</ul>
+							</span>
+							
+						</div>
+						<div class="mm-3column">
+								
+								<span class="categories-list">
+								<ul>
+								<span>Information Tech</span>
+									<li>lst Semester</li>
+									<li>2nd Semester </li>
+									<li>3rd Semester</li>
+									<li>4th Semester</li>
+									<li>5th Semester</li>
+									<li>6th Semester</li>
+								</ul>
+							</span>
+							
+						</div>
+							<div class="mm-3column">
+						<span class="categories-list">
+						<ul>
+							 <span>Electrical &amp Comm</span>
+							 <li>lst Semester</li>
+							 <li>2nd Semester </li>
+							 <li>3rd Semester</li>
+							 <li>4th Semester</li>
+							 <li>5th Semester</li>
+							 <li>6th Semester</li>		
+							</ul>
+						</span>							
+							</div>
+							<div class="mm-3column">
+								<span class="categories-list">
+						<ul>
+							 <span>Electrical &amp Elec</span>
+							 <li>lst Semester</li>
+							 <li>2nd Semester </li>
+							 <li>3rd Semester</li>
+							 <li>4th Semester</li>
+							 <li>5th Semester</li>
+							 <li>6th Semester</li>	
+						</ul>
+					</span>
+						</div>
+						<div class="mm-3column">
+								<span class="categories-list">
+						<ul>
+							 <span>mechanical</span>
+							 <li>lst Semester</li>
+							 <li>2nd Semester </li>
+							 <li>3rd Semester</li>
+							 <li>4th Semester</li>
+							 <li>5th Semester</li>
+							 <li>6th Semester</li>	
+						</ul>
+					</span>
+						</div>
+						<div class="mm-3column">
+								<span class="categories-list">
+						<ul>
+                             <span>civil</span>
+							 <li>lst Semester</li>
+							 <li>2nd Semester </li>
+							 <li>3rd Semester</li>
+							 <li>4th Semester</li>
+							 <li>5th Semester</li>
+							 <li>6th Semester</li>	
+						</ul>
+					</span>
+						</div>
+					
+						
+					</div>
+			 
+					</li>
+					<li class="drop-down1" id="pg">
+						<a href="#">post graduate </a>
+						<div class="mega-menu1 fadeIn animated" id="pg-menu">
+							<div class="mm-4column ">
+									
+									<span class="categories-list">
+									<ul>
+									<span>MASTER OF COMPUTER APPLICATION </span>
+										<li>lst Semester</li>
+										<li>2nd Semester </li>
+										<li>3rd Semester</li>
+										<li>4th Semester</li>
+										<li>5th Semester</li>
+										<li>6th Semester</li>
+										
+									</ul>
+								</span>
+								
+							</div>
+							<div class="mm-4column ">
+									
+									<span class="categories-list">
+									<ul>
+									<span>MASTER OF BUSSINES APPLICATION </span>
+										<li>lst Semester</li>
+										<li>2nd Semester </li>
+										<li>3rd Semester</li>
+										<li>4th Semester</li>
+										<li>5th Semester</li>
+										<li>6th Semester</li>
+										
+									</ul>
+								</span>
+								
+							</div>
+							<div class="mm-4column ">
+									
+									<span class="categories-list">
+									<ul>
+									<span>	Master of Technology </span>
+										<li>lst Semester</li>
+										<li>2nd Semester </li>
+										<li>3rd Semester</li>
+										<li>4th Semester</li>
+										<li>5th Semester</li>
+										<li>6th Semester</li>
+										
+									</ul>
+								</span>
+								
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">Services</a>
+					</li>
+					<li>
+						<a href="#">Team</a>
+					</li>
+					<li>
+						<a href="#">Portfolio</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
 
-			<div id="Paris" class="tabcontent" style="display: none;">
-			  <ul class="tabresult">
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color1"><strong>JNTUH MBA I, II, III, IV Semesters Regular/Supply Exam Fee Notification Aug 2016<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color"><strong>JNTUK B.Tech R16 Regulation Academic Regulations PDF Download<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color2"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch</strong></a></h4>
-			   	 </li>
-			   	  <li>
-			   	 	 <h4><a href="" class="resultk-color1"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color"><strong>JNTUK B.Tech 3-1 Sem (R13,R10,R07,R05) Supply Exam Results Mar/Apr 2016<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	  <li>
-			   	 	 <h4><a href="" class="resultk-color2"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch</strong></a></h4>
-			   	 </li>
-			   </ul>
-			</div>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.mywebtricks.com/">Contact</a>
+					</li>
+         <li style="float:right;">
+           <a href="http://www.mywebtricks.com/">Go my Blog</a>
+          </li>
 
-			<div id="Tokyo" class="tabcontent" style="display: none;">
-			  <ul class="tabresult">
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color2"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch</strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color1"><strong>Telangana (TS) Inter 2nd Year Supply Results 2016Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	  <li>
-			   	 	 <h4><a href="" class="resultk-color2"><strong>JNTUK Hall tickets for Ph.D Credit Course Examinations June 2016Batch</strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	  <li>
-			   	 	 <h4><a href="" class="resultk-color1"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   </ul>
-			</div>	
-			<div id="metrial4" class="tabcontent" style="display: none;">
-			  <ul class="tabresult">
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color2"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch</strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color1"><strong>Telangana (TS) Inter 2nd Year Supply Results 2016Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	  <li>
-			   	 	 <h4><a href="" class="resultk-color2"><strong>JNTUK Hall tickets for Ph.D Credit Course Examinations June 2016Batch</strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	  
-			   </ul>
-			</div>	
-			<div id="metrial5" class="tabcontent" style="display: none;">
-			  <ul class="tabresult">
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color2"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch</strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color1"><strong>Telangana (TS) Inter 2nd Year Supply Results 2016Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	  <li>
-			   	 	 <h4><a href="" class="resultk-color2"><strong>JNTUK Hall tickets for Ph.D Credit Course Examinations June 2016Batch</strong></a></h4>
-			   	 </li>
-			   	 
-			   </ul>
-			</div>	
-			<div id="metrial6" class="tabcontent" style="display: none;">
-			  <ul class="tabresult">
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color2"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch</strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color1"><strong>Telangana (TS) Inter 2nd Year Supply Results 2016Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	 
-			   </ul>
-			</div>	
-			<div id="metrial7" class="tabcontent" style="display: none;">
-			  <ul class="tabresult">
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color2"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch</strong></a></h4>
-			   	 </li>
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color1"><strong>Telangana (TS) Inter 2nd Year Supply Results 2016Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	 
-			   	 <li>
-			   	 	 <h4><a href="" class="resultk-color"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   	  <li>
-			   	 	 <h4><a href="" class="resultk-color1"><strong>JNTU Kakinada Dispatched PC &amp; CMM For All the 2016 Outgoing Batch<img src="images/newgif.gif" alt="new21" class="newimg"></strong></a></h4>
-			   	 </li>
-			   </ul>
-			</div>	
-     </div>
-       </div>
-       <div id="vertical-right"> vertical add right</div>
+				</ul>
+			</nav>
+		</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+				//responsive menu toggle
+				$("#menutoggle").click(function() {
+					$('.xs-menu').toggleClass('displaynone');
 
+					});
+				//add active class on menu
+				$('ul li').click(function(e) {
+					e.preventDefault();
+					$('li').removeClass('active');
+					$(this).addClass('active');
+				});
+			//drop down menu	
+					$(".drop-down").hover(function() {
+						$('.mega-menu').addClass('display-on');
+					});
+					$(".drop-down").mouseleave(function() {
+						$('.mega-menu').removeClass('display-on');
+					});
 
-     	
-     </div>
-    
-     
+					$(".drop-down1").hover(function() {
 
-	     <div class="footer">
+						$('.mega-menu1').addClass('display-on');
+					});
+					$(".drop-down1").mouseleave(function() {
+						$('.mega-menu1').removeClass('display-on');
+					});
+			
+			});
 
-			     	 <p>&copy 2016  All Right's by Newbie Soft Solutions Pvt Ltd</p>
-	     	
-	     </div>
-  	
-  </div>
+	 
+</script>
 
 </body>
 </html>
